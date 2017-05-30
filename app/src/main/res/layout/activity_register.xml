@@ -9,15 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#000000"
-    tools:context="com.example.bungbau.bungbaufc.main_activity">
+    tools:context="com.example.bungbau.bungbaufc.MainActivity">
 
     <EditText
-        android:id="@+id/edit_username_login_"
+        android:id="@+id/edit_username"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:hint="Username"
-        android:inputType="textPassword"
         android:maxLines="1"
         android:textColor="#000000"
         android:textColorHint="#000000"
@@ -30,7 +29,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:id="@+id/edit_password_login"
+        android:id="@+id/edit_password"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -41,12 +40,12 @@
         android:textColorHint="#000000"
         android:background="#ffffff"
         android:layout_marginTop="22dp"
-        android:layout_below="@+id/edit_username_login_"
-        android:layout_alignLeft="@+id/edit_username_login_"
-        android:layout_alignStart="@+id/edit_username_login_" />
+        android:layout_below="@+id/edit_username"
+        android:layout_alignLeft="@+id/edit_username"
+        android:layout_alignStart="@+id/edit_username" />
 
     <EditText
-        android:id="@+id/edit_agpassword_login"
+        android:id="@+id/edit_confirmpassword"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -57,24 +56,23 @@
         android:textColorHint="#000000"
         android:background="#ffffff"
         android:layout_marginTop="23dp"
-        android:layout_below="@+id/edit_password_login"
-        android:layout_alignLeft="@+id/edit_password_login"
-        android:layout_alignStart="@+id/edit_password_login" />
+        android:layout_below="@+id/edit_password"
+        android:layout_alignLeft="@+id/edit_password"
+        android:layout_alignStart="@+id/edit_password" />
 
     <EditText
-        android:id="@+id/edit_email_login"
+        android:id="@+id/edit_email"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:hint="Email"
-        android:inputType="textPassword"
         android:maxLines="1"
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:background="#ffffff"
-        android:layout_below="@+id/edit_agpassword_login"
-        android:layout_alignLeft="@+id/edit_agpassword_login"
-        android:layout_alignStart="@+id/edit_agpassword_login"
+        android:layout_below="@+id/edit_confirmpassword"
+        android:layout_alignLeft="@+id/edit_confirmpassword"
+        android:layout_alignStart="@+id/edit_confirmpassword"
         android:layout_marginTop="18dp" />
 
     <TextView
@@ -95,8 +93,7 @@
         android:layout_gravity="center_horizontal"
         android:text="Confirm"
         android:layout_marginTop="25dp"
-        android:onClick="Backregister"
-        android:layout_below="@+id/edit_email_login"
-        android:layout_alignLeft="@+id/edit_email_login"
-        android:layout_alignStart="@+id/edit_email_login" />
+        android:layout_below="@+id/edit_email"
+        android:layout_alignLeft="@+id/edit_email"
+        android:layout_alignStart="@+id/edit_email" />
 </RelativeLayout>

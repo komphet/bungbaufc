@@ -5,11 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
-
-public class main_activity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     @Override
     protected  void  onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,14 +18,22 @@ public class main_activity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(main_activity.this,register_activity.class));
+                startActivityForResult(new Intent(MainActivity.this,RegisterActivity.class), 1);
             }
 
 
         });
     }
-    public void Nextregister (View view) {
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if(requestCode == 0)
+        {
+            if(resultCode == 1)
+            {
+                Toast.makeText(this, "Register complete", Toast.LENGTH_SHORT);
+            }
+        }
     }
-
 }
